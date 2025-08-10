@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Basketball Sign-Up Form</h1>
+    <p id="description">Please fill out the details below to join the basketball club</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Name
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="contact-number">
+                Contact Number
+                <input id="contact-number" type="tel" placeholder="+44 7XXX XXX XXX" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="email" id="email-label">
+                Email
+                <input id="email" type="email" placeholder="Enter your Email" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="number" id="number-label">
+                Age
+                <input id="number" type="number" placeholder="Age" min="18" max="50" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="dropdown">Which position do you play?
+                <select id="dropdown">
+                    <option>Select a position</option>
+                    <option>Point Guard</option>
+                    <option>Shooting Guard</option>
+                    <option>Small Forward</option>
+                    <option>Power Forward</option>
+                    <option>Center</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Are you interested in playing for the team?</legend>
+            <label for="y">
+                <input type="radio" id="y" class="inline" name="team" value="y" checked> Yes
+            </label>
+            <label for="m">
+                <input type="radio" id="m" class="inline" name="team" value="m"> Maybe
+            </label>
+            <label for="n">
+                <input type="radio" id="n" class="inline" name="team" value="n"> No
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Why do you want to join the club? (Check all that apply)</legend>
+            <label>
+                <input type="checkbox" id="reason-fitness" value="fitness" checked> Fitness
+            </label>
+            <label>
+                <input type="checkbox" id="reason-teamwork" value="teamwork"> Teamwork
+            </label>
+            <label>
+                <input type="checkbox" id="reason-competition" value="competition"> Competition
+            </label>
+            <label>
+                <input type="checkbox" id="reason-friendship" value="friendship"> Friendship
+            </label>
+            <label>
+                <input type="checkbox" id="reason-discipline" value="discipline"> Discipline
+            </label>
+            <label>
+                <input type="checkbox" id="reason-passion" value="passion"> Passion
+            </label>
+            <label>
+                <input type="checkbox" id="reason-confidence" value="confidence"> Confidence
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="health">Any medical conditions?
+                <textarea id="health" rows="3" cols="30"
+                    placeholder="Please state any medical conditions that we need to be aware of..."></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit" class="Submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
